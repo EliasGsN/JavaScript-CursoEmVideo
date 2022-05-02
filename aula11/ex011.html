@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Composta</title>
+</head>
+<body>
+    <h1>Identificação de Nascionalidade</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Identidicar" onclick="identificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function identificar() {
+            let txtn = document.getElementById("txtpais")
+            let res =document.getElementById("res")
+            let pais = txtn.value
+            res.innerHTML = `<p>Se você nasceu em ${pais}</p>`
+            if (pais == "Brasil" || pais == "brasil") {
+                res.innerHTML += `<p>Você é Brasileiro!</p>`
+            } else {
+                res.innerHTML += `Você é Estrangeiro!`
+            }
+
+        }
+    </script>
+</body>
+</html>
