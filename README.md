@@ -1,3 +1,3 @@
 # aula_javascript
 
-Curso Gustavo Guanabara - Curso em Video
+Gustavo Guanabara - Curso em Video
